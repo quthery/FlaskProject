@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+about us page!
+{% endblock %}
+
+
+{% block body %}
+    <div class="custom-container mt-5">
+        <h3 class="custom-heading">Создание твоей статьи!</h3>
+        <form method="post" class="custom-form">
+            <input type="text" name="title" id="title" class="custom-input" placeholder="Заголовок"><br>
+            <textarea name="intro" id="intro" class="custom-textarea" placeholder="Введение"></textarea>
+            <textarea name="text" id="text" class="custom-textarea" placeholder="Текст статьи"></textarea>
+            <input type="submit" class="custom-btn" value="Опубликовать">
+        </form>
+    </div>
+</body>
+</html>
+
+
+{% endblock %}
